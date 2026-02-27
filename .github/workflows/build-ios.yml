@@ -101,7 +101,7 @@ jobs:
           SENTRY_DIST=${{ steps.env.outputs.EXPO_PUBLIC_BUNDLE_IDENTIFIER }}
           yarn use-build-number-with-bump
           eas build -p ios
-          --profile $PROFILE
+          --profile development
           --local --output build.tar.gz --non-interactive
 
       - name: 📂 Extract build artifact
